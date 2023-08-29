@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Concepts Assignment</title>
+    <link rel="stylesheet" href="ProjectStyleSheet.css">
+<link rel="stylesheet" href="WPR 181/Projects/ProjectStyleSheet.css">
+</head>
+<body>
+    <header>
+        <div class="HeadingOne"><!--Heading 1-->
+        <h1>Understanding Web Concepts</h1>
+        </div>
+    </header>
+    <img id="image" src="WebConcepts Image.png" alt="">
+    <h2 id="HeadingTwo">Navigation of topics</h2>
+    <nav><!--Navigation links to different topics-->
+      <div id="navigation">
+        <ul id="links">
+            <li><a href="#overview">Overview of the World Wide Web</a></li><!--Link to the Overview of the World Wide Web-->
+            <li><a href="#history">History of the Internet</a></li><!--Link to the History of the Internet-->
+            <li><a href="#vs">WWW vs the Internet</a></li><!--Link to the WWW vs the Internet-->
+            <li><a href="#evolution">Evolution of the Internet</a></li><!--Link to Evolution of the Internet-->
+            <li><a href="#protocols">Internet Protocols</a></li><!--Link to Internet protocols-->
+            <li><a href="#architecture">Web Application Architecture</a></li><!--Link to Web Application Architecture-->
+            <li><a href="#server-style">Client-side and Server-side Engineering</a></li><!--Link to client-side and server-side engineering-->
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+        <section id="overview">
+            <h3 class="TopicHeading">Overview of the World Wide Web</h3>
+            <div class="Content">
+                <p>The World Wide Web (WWW) is an information space consisting of interconnected documents and resources linked by hyperlinks. It allows users to navigate and access a wide range of multimedia content using
+                web browsers. The WWW revolutionised the way 
+                information is shared and accessed, enabling the creation of websites, 
+                online services, and communication platforms.
+                </p>  
+            </div>
+        </section>
+        <section id="history">
+             <h3 class="TopicHeading">History of the Internet (Including Importatnt dates)</h3>
+             <div id ="dates">
+                 <ol>
+                    <li>1962 : J.C.R. Licklider introduces the concept of a “Galactic Network” and envisions a globally 
+                    interconnected set of computers.</li>
+                    <br>
+                    <li>1969 : The ARPANET project begins, establishing the foundation for the internet.</li>
+                    <br>
+                    <li>1971 : The fist email is sent by Ray Tomlinson.</li>
+                    <br>
+                    <li>1973 : Vint Cerf and Bob Kahn publish the first paper describing the Transmission Control Protocol, a key protocol for data transmission on the Internet.</li>
+                    <br>
+                    <li>1983 : The Domain Name System (DNS) is introduced, enabling the use of human - readable domain names.</li>
+                    <br>
+                    <li>1989 : Tim Berners-Lee proposes the concept of the "Wolrd Wide Web".</li>
+                    <br>
+                    <li>1990 : The first web browser, "WorldWideWeb", is released. And the First web server is released, by Tim Berners-Lee.</li>
+                    <br>
+                    <li>1991: The World Wide Web is made publicly accessible, marking the official birth of the modern web.</li>
+                    <br>
+                    <li>1993 : The graphical web browser Mosaic is released, popularising the web.</li>
+                    <br>
+                    <li>1994 : Netscape Navigator, a commercial web browser, is launched.</li>
+                    <br>
+                    <li>1995 : NSFNET, a major backbone of the Internet, shifts from government control to commercial providers.</li>
+                    <br>
+                    <li>1998 : Google is founded, revolutionising web search.</li>
+                    <br>
+                    <li>2000: The dot-com bubble bursts, leading to both the decline of many internet-based businesses and the eventual resurgence of a more sustainable online economy</li>
+                    <br>
+                    <li>2004 : Web 2.0 emerges, emphasising user-generated content and dynamic web applications.</li>
+                    <br>
+                    <li>2007 : Apple introduces the iPhone, ushering in the era of smartphones and mobile internet access</li>
+                    <br>
+                    <li>2010 : Instagram is launched, focusing on photo sharing, and paving the way for the growth of visual social media.</li>
+                    <br>
+                    <li>2014: The Internet of Things (IoT) gains traction, connecting everyday objects and devices to the internet.</li>
+                    <br>
+                    <li>2016 : The completion of the IPv6 transition helps address the growing shortage of available IP addresses.</li>
+                 </ol>
+        </section>
+        <section id="vs">
+            <h3 class="TopicHeading">WWW vs the Internet</h3>
+            <style>
+                table {
+                  border-collapse: collapse;
+                  width: 75%;
+                }
+                th, td {
+                  border: 3px solid black;
+                  padding: 8px;
+                }
+              </style>
+            <table id="table">
+                <tr id="row1">
+                  <td>Basis of comparison</td>
+                  <td>WWW</td>
+                  <td>Internet</td>
+                </tr>
+                <tr id="row2">
+                  <td class="coloum1">Definition</td>
+                  <td>The internet is a global network of interconnected computer networks that use the TCP/IP protocol to connect devices worldwide</td>
+                  <td>The World Wide Web or WWW refers to online content that is formatted in HTML and accessible via the HTTP/HTTPS protocol.</td>
+                </tr>
+                <tr id="row3">
+                  <td class="coloum1">Founded</td>
+                  <td>Internet was founded in the late 1960s.</td>
+                  <td>In 1989, Tim Berners-Lee, an English scientist, created the World Wide Web.</td>
+                </tr>
+                <tr id="row4">
+                  <td class="coloum1">Architecture</td>
+                  <td>The internet's architecture is decentralized and follows a peer-to-peer model. It is a network of networks, meaning that it connects various autonomous systems and networks that use the TCP/IP protocol to communicate with each other.</td>
+                  <td>The World Wide Web is based on a client-server architecture. Clients (typically web browsers) send requests to web servers, which then respond by serving web pages and resources to the clients.</td>
+                <tr>
+                  <td class="coloum1">Functionality</td>
+                  <td>The internet is a vast network that connects computer networks all over the world.</td>
+                  <td>World Wide Web is a service provided by the internet.</td>
+                </tr>
+                <tr id="row5">
+                  <td class="coloum1">Type</td>
+                  <td>The internet is primarily hardware-based.</td>
+                  <td>In comparison to the Internet, WWW is more software-oriented.</td>
+                </tr>
+                <tr id="row6">
+                  <td class="coloum1">Protocol</td>
+                  <td>The Internet utilizes the Transmission Control Protocol/Internet Protocol (TCP/IP).</td>
+                  <td>The World Wide Web utilizes the Hyper Text Transfer Protocol (HTTP).</td>
+                </tr>
+                <tr id="row7">
+                  <td class="coloum1">Application</td>
+                  <td>The internet has a wide range of applications in entertainment, education, research, navigation, advertising, and banking.</td>
+                  <td>The World Wide Web is utilized to access resources all across the world.</td>
+                </tr>
+              </table>
+        </section>
+        <section id="evolution">
+            <h3 class="TopicHeading">Evolution of the Internet</h3>
+            <div class="Content">
+                <p>The internet has evolved from its origins as a military research project into
+                  a worldwide communication and information platform. It has transitioned 
+                  from basic text-based communication to a multimedia-rich environment, 
+                  enabling real-time collaboration, e-commerce, social networking, and more.
+                </p>
+            </div>
+        </section>
+        <section id="protocols">
+          <h3 class="TopicHeading">Internet Protocols</h3>
+          <p class="Content">Internet protocols are standardised rules that govern how data is 
+            transmitted and received over the internet. Some key protocols include :
+          </p>
+          <div class="text-block">
+            HTTP (Hypertext Transfer Protocol): Used for transferring web pages and resources.
+          </div>
+          <br>
+          <div class="text-block">
+            HTTPS (Hypertext Transfer Protocol Secure): Encrypts data for secure communication.
+          </div>
+          <br>
+          <div class="text-block">
+            TCP/IP (Transmission Control Protocol/Internet Protocol): The foundational protocol suite of the internet.
+          </div>
+          <br>
+          <div class="text-block">
+            SMTP (Simple Mail Transfer Protocol): Used for sending emails.
+          </div>
+          <br>
+          <div class="text-block">
+            FTP (File Transfer Protocol): Used for transferring files between computers.
+          </div>
+        </section>
+        <section id="architecture">
+          <h3 class="TopicHeading">Web Application Architecture</h3>
+          <div class="Content">
+          <p>
+            Web application architecture refers to the design and structure of web-based 
+            applications. It typically involves three tiers :
+          </p>
+          </div>
+          <p id="blocks">
+            Hover over the blocks to see what they represent : 
+          </p>
+            <abbr title="Handles user interface and interaction.">Presentation Tier</abbr>
+            <abbr title=" Contains the application's business logic.">Logic Tier</abbr>
+            <abbr title="Manages data storage and retrieval.">Data Tier</abbr>
+        <!--  <ul>
+            <li>Presentation Tier : Handles user interface and interaction.</li>
+            <li>Logic Tier : Contains the application's business logic.</li>
+            <li>Data Tier : Manages data storage and retrieval.</li>
+          </ul>
+         -->
+        </section>
+        <section id="server-style">
+          <h3 class="TopicHeading">Client-side and Server-side Engineering</h3>
+          <div class="columns">
+            <p class="Content">
+            <b>Client-side:</b> 
+            <br>
+            br
+            Refers to code and processes 
+            <br>
+            executed on the user's device (browser). 
+            <br>
+            It involves creating interactive and 
+            <br>
+            responsive user interfaces using 
+            <br>
+            HTML, CSS, and JavaScript.
+            <br>
+            <br>
+            <b>Server-side:</b> 
+            <br>
+            Involves code and processes
+            <br>
+            that run on the web server. It manages
+            <br>
+            data processing, business logic, and 
+            <br>
+            interactions with databases. Common 
+            <br>
+            server- side languages include 
+            <br>
+            PHP, Python, Ruby, and Java.
+          </p>              
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Roebin Uys (577626) & Kai Hinterholzer (600564)</p>
+    </footer>
+</body>
+</html>
